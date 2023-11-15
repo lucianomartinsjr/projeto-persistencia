@@ -1,6 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
+
 export class CursoController {
   static async createCurso(req, res) {
     const { nomeCurso, idEstudantes } = req.body;
